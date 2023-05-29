@@ -32,14 +32,32 @@
           <a class="nav-link" href="#">Contact</a>
         </div>
       </nav>
-      <div class="content">
-        <h3>WELCOME TO MY SITE.</h3>
-      </div>
+      <div class="content" id="parent"></div>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const parent = document.getElementById("parent");
+      const headline = "WELCOME TO MY SITE.".split(" ");
+
+      function toggleVisibility(element, display) {
+        element.style.display = display;
+      }
+
+      for (let i = 0; i < headline.length; i++) {
+        const item = headline[i];
+        const headlineWord = document.createElement("h3");
+        headlineWord.textContent = item;
+        headlineWord.style.display = "none";
+        parent.appendChild(headlineWord);
+
+        setTimeout(() => toggleVisibility(headlineWord, "block"), i * 700);
+
+        setTimeout(() => toggleVisibility(headlineWord, "none"), i * 700 + 700);
+      }
+    </script>
   </body>
 </html>

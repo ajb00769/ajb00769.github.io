@@ -84,3 +84,10 @@ nav {
 #navitems {
     padding-right: 1rem;
 }
+
+.hidden {
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+    visibility: hidden;
+}
