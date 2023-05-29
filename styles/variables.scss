@@ -1,0 +1,68 @@
+$dark-backdrop: #2E3440;
+$cyan-bdcontrast: #88C0D0;
+$gold-bdcontrast: #dd9a53;
+$snowstorm1: #D8DEE9;
+$textfontsz: 12px;
+$titlefontsz: 16px;
+
+@font-face {
+    font-family: "ITC Avant Garde Gothic Std";
+    src: url(ITCAvantGardeStd-BkCnObl.otf) format("opentype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+nav {
+    color: $cyan-bdcontrast;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    background: transparent;
+    backdrop-filter: blur(20px);
+    border-radius: 2px;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("/images/bldg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.text-logo-1 {
+    font-family: "ITC Avant Garde Gothic Std";
+    color: $gold-bdcontrast;
+    font-weight: 400;
+    text-shadow: 0.2px 0.2px 0.2px $snowstorm1;
+}
+
+.text-logo-2 {
+    font-family: "ITC Avant Garde Gothic Std";
+    color: $gold-bdcontrast;
+    font-weight: 800;
+    text-shadow: 0.2px 0.2px 0.2px $snowstorm1;
+}
+
+.nav-link:hover {
+    text-shadow: 0px 0px 0px $snowstorm1;
+    font-weight: 700px;
+}
+
+.navbar {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#brandtext {
+    padding-left: 1rem;
+    color: $gold-bdcontrast;
+    text-align: center;
+}
+
+#navitems {
+    padding-right: 1rem;
+}
