@@ -1,14 +1,14 @@
 $dark-nord: #2E3440;
-$cyan-nord: #88C0D0;
-$gold-nord: #dd9a53;
+$cyan-nord: #9ae4f8;
+$gold-nord: #f5bf4a;
 $snowstorm1: #D8DEE9;
 $titletextblue: #74F0ED;
 $titletextred: #EA445A;
-$textfontsz: 12px;
+$textfontsz: 14px;
 $titlefontsz: 16px;
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 @font-face {
     font-family: "ITC Avant Garde Gothic Std";
@@ -22,43 +22,51 @@ $titlefontsz: 16px;
 }
 
 nav {
-    color: $cyan-nord;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
     background: transparent;
     backdrop-filter: blur(20px);
     border-radius: 2px;
 }
 
-.banner {
+body {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("/images/bldg.jpg");
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 .text-logo-1 {
     font-family: "ITC Avant Garde Gothic Std";
     color: $gold-nord;
-    font-weight: 400;
+    font-weight: 500;
+    font-size: 20px;
 }
 
 .text-logo-2 {
     font-family: "ITC Avant Garde Gothic Std";
     color: $gold-nord;
     font-weight: 900;
+    font-size: 18px;
 }
 
 .navbar {
     width: 100%;
     padding-left: 30px;
     padding-right: 30px;
+    position: fixed;
+}
+
+.navbar-nav {
+    padding-top: 5px;
 }
 
 .nav-link {
-    font-family: "Poppins";
-    font-size: 14px;
-    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    font-size: $textfontsz;
+    font-weight: 700;
 }
 
 .content {
@@ -81,8 +89,8 @@ nav {
     text-align: center;
 }
 
-#navitems {
-    padding-right: 1rem;
+#navitems > a {
+    color: $cyan-nord;
 }
 
 .hidden {

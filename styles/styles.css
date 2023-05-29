@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @font-face {
   font-family: "ITC Avant Garde Gothic Std";
   src: url(ITCAvantGardeStd-BkCnObl.otf) format("opentype"); }
@@ -9,38 +9,45 @@
   font-family: sans-serif; }
 
 nav {
-  color: #88C0D0;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
   background: transparent;
   backdrop-filter: blur(20px);
   border-radius: 2px; }
 
-.banner {
+body {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("/images/bldg.jpg");
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat; }
 
 .text-logo-1 {
   font-family: "ITC Avant Garde Gothic Std";
-  color: #dd9a53;
-  font-weight: 400; }
+  color: #f5bf4a;
+  font-weight: 500;
+  font-size: 20px; }
 
 .text-logo-2 {
   font-family: "ITC Avant Garde Gothic Std";
-  color: #dd9a53;
-  font-weight: 900; }
+  color: #f5bf4a;
+  font-weight: 900;
+  font-size: 18px; }
 
 .navbar {
   width: 100%;
   padding-left: 30px;
-  padding-right: 30px; }
+  padding-right: 30px;
+  position: fixed; }
+
+.navbar-nav {
+  padding-top: 5px; }
 
 .nav-link {
-  font-family: "Poppins";
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
-  font-weight: 600; }
+  font-weight: 700; }
 
 .content {
   width: 100%;
@@ -56,11 +63,11 @@ nav {
 
 #brandtext {
   padding-left: 1rem;
-  color: #dd9a53;
+  color: #f5bf4a;
   text-align: center; }
 
-#navitems {
-  padding-right: 1rem; }
+#navitems > a {
+  color: #9ae4f8; }
 
 .hidden {
   position: absolute;

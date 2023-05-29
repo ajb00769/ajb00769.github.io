@@ -14,10 +14,10 @@ headline.forEach((headlineWord, i) => {
 });
 
 function toggleHeadlineWords() {
-  headline.forEach((headlineWord, i) => {
+  headline.forEach((_, i) => {
     const headlineWordElement = document.getElementById(`headline-${i}`);
     setTimeout(() => toggleVisibility(headlineWordElement), i * 700);
-    setTimeout(() => toggleVisibility(headlineWordElement), i * 700 + 700);
+    setTimeout(() => toggleVisibility(headlineWordElement), i * 695 + 695);
   });
 }
 
