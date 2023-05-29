@@ -1,9 +1,14 @@
-$dark-backdrop: #2E3440;
-$cyan-bdcontrast: #88C0D0;
-$gold-bdcontrast: #dd9a53;
+$dark-nord: #2E3440;
+$cyan-nord: #88C0D0;
+$gold-nord: #dd9a53;
 $snowstorm1: #D8DEE9;
+$titletextblue: #74F0ED;
+$titletextred: #EA445A;
 $textfontsz: 12px;
 $titlefontsz: 16px;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 @font-face {
     font-family: "ITC Avant Garde Gothic Std";
@@ -17,7 +22,7 @@ $titlefontsz: 16px;
 }
 
 nav {
-    color: $cyan-bdcontrast;
+    color: $cyan-nord;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
     background: transparent;
     backdrop-filter: blur(20px);
@@ -34,21 +39,14 @@ nav {
 
 .text-logo-1 {
     font-family: "ITC Avant Garde Gothic Std";
-    color: $gold-bdcontrast;
+    color: $gold-nord;
     font-weight: 400;
-    text-shadow: 0.2px 0.2px 0.2px $snowstorm1;
 }
 
 .text-logo-2 {
     font-family: "ITC Avant Garde Gothic Std";
-    color: $gold-bdcontrast;
-    font-weight: 800;
-    text-shadow: 0.2px 0.2px 0.2px $snowstorm1;
-}
-
-.nav-link:hover {
-    text-shadow: 0px 0px 0px $snowstorm1;
-    font-weight: 700px;
+    color: $gold-nord;
+    font-weight: 900;
 }
 
 .navbar {
@@ -57,9 +55,29 @@ nav {
     padding-right: 30px;
 }
 
+.nav-link {
+    font-family: "Poppins";
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 45%;
+    text-align: center;
+    color: $snowstorm1;
+}
+
+.content > h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 70px;
+    text-shadow: 3px 2px 1px $titletextred, 0px -2px 1px $titletextblue;
+}
+
 #brandtext {
     padding-left: 1rem;
-    color: $gold-bdcontrast;
+    color: $gold-nord;
     text-align: center;
 }
 
