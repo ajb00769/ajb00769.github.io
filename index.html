@@ -40,24 +40,35 @@
       crossorigin="anonymous"
     ></script>
     <script>
+      function toggleVisibility(element) {
+        element.classList.toggle("hidden");
+      }
+
       const parent = document.getElementById("parent");
-      const headline = "WELCOME TO MY SITE.".split(" ");
+      const headline = "WELCOME TO MY SITE ;)".split(" ");
 
-      function toggleVisibility(element, display) {
-        element.style.display = display;
+      headline.forEach((headlineWord, i) => {
+        const headlineWordElement = document.createElement("h3");
+        headlineWordElement.textContent = headlineWord;
+        headlineWordElement.id = `headline-${i}`;
+        headlineWordElement.classList.add("hidden");
+        parent.appendChild(headlineWordElement);
+      });
+
+      function toggleHeadlineWords() {
+        headline.forEach((headlineWord, i) => {
+          const headlineWordElement = document.getElementById(`headline-${i}`);
+          setTimeout(() => toggleVisibility(headlineWordElement), i * 700);
+          setTimeout(
+            () => toggleVisibility(headlineWordElement),
+            i * 700 + 700
+          );
+        });
       }
 
-      for (let i = 0; i < headline.length; i++) {
-        const item = headline[i];
-        const headlineWord = document.createElement("h3");
-        headlineWord.textContent = item;
-        headlineWord.style.display = "none";
-        parent.appendChild(headlineWord);
+      toggleHeadlineWords();
 
-        setTimeout(() => toggleVisibility(headlineWord, "block"), i * 700);
-
-        setTimeout(() => toggleVisibility(headlineWord, "none"), i * 700 + 700);
-      }
+      setInterval(toggleHeadlineWords, 3500);
     </script>
   </body>
 </html>
