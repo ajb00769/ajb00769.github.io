@@ -57,6 +57,12 @@ body {
     background-repeat: no-repeat;
 }
 
+@media (max-width: 767px) {
+    body {
+        background-attachment: scroll;
+    }
+}
+
 .text-logo-1 {
     font-family: "ITC Avant Garde Gothic Std";
     color: $gold-nord;
