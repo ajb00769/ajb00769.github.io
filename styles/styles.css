@@ -3,6 +3,20 @@
 @font-face {
   font-family: "ITC Avant Garde Gothic Std";
   src: url(ITCAvantGardeStd-BkCnObl.otf) format("opentype"); }
+@media (max-width: 768px) {
+  .navbar-brand {
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    transform: translateX(-50%); }
+
+  .custom-toggler.navbar-toggler {
+    border: none;
+    transform: translateX(60%); }
+
+  .navbar-toggler:focus {
+    outline: none;
+    box-shadow: none; } }
 * {
   margin: 0;
   padding: 0;
@@ -62,7 +76,6 @@ body {
   text-shadow: 3px 2px 1px #EA445A, 0px -2px 1px #74F0ED; }
 
 #brandtext {
-  padding-left: 1rem;
   color: #f5bf4a;
   text-align: center; }
 
