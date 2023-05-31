@@ -2,6 +2,8 @@ $dark-nord: #2E3440;
 $cyan-nord: #9ae4f8;
 $gold-nord: #f5bf4a;
 $snowstorm1: #D8DEE9;
+$snowstorm2: #ECEFF4;
+$snowstorm2-darker: #eceff48a;
 $titletextblue: #74F0ED;
 $titletextred: #EA445A;
 $textfontsz: 14px;
@@ -34,10 +36,26 @@ $titlefontsz: 16px;
     }
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: $dark-nord;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $snowstorm2;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: $snowstorm2-darker;
+}
+
 * {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
 }
 
 nav {
@@ -48,19 +66,13 @@ nav {
 }
 
 body {
-    width: 100%;
-    min-height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("/images/bldg.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-}
-
-@media (max-width: 767px) {
-    body {
-        background-attachment: scroll;
-    }
+    display: flex;
+    min-width: 600px;
 }
 
 .text-logo-1 {
@@ -106,6 +118,23 @@ body {
     font-family: "Roboto", sans-serif;
     font-size: 70px;
     text-shadow: 3px 2px 1px $titletextred, 0px -2px 1px $titletextblue;
+}
+
+.section-2 {
+    color: $snowstorm1;
+    width: 600px;
+    height: 600px;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(255, 255, 255, .3);
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    margin: 0 auto;
+    top: 1500px;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #brandtext {

@@ -17,10 +17,22 @@
   .navbar-toggler:focus {
     outline: none;
     box-shadow: none; } }
+::-webkit-scrollbar {
+  width: 10px; }
+
+::-webkit-scrollbar-track {
+  background: #2E3440; }
+
+::-webkit-scrollbar-thumb {
+  background: #ECEFF4;
+  border-radius: 5px; }
+
+::-webkit-scrollbar-thumb:hover {
+  background: #eceff48a; }
+
 * {
   margin: 0;
-  padding: 0;
-  font-family: sans-serif; }
+  padding: 0; }
 
 nav {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
@@ -29,17 +41,14 @@ nav {
   border-radius: 2px; }
 
 body {
-  width: 100%;
-  min-height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("/images/bldg.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  display: flex;
+  min-width: 600px; }
 
-@media (max-width: 767px) {
-  body {
-    background-attachment: scroll; } }
 .text-logo-1 {
   font-family: "ITC Avant Garde Gothic Std";
   color: #f5bf4a;
@@ -77,6 +86,22 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 70px;
   text-shadow: 3px 2px 1px #EA445A, 0px -2px 1px #74F0ED; }
+
+.section-2 {
+  color: #D8DEE9;
+  width: 600px;
+  height: 600px;
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  margin: 0 auto;
+  top: 1500px;
+  left: 50%;
+  transform: translate(-50%, -50%); }
 
 #brandtext {
   color: #f5bf4a;
