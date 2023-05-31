@@ -75,6 +75,9 @@ body {
   font-size: 14px;
   font-weight: 700; }
 
+.nav-link:hover {
+  color: #9ae4f8; }
+
 .content {
   width: 100%;
   position: absolute;
@@ -87,33 +90,20 @@ body {
   font-size: 70px;
   text-shadow: 3px 2px 1px #EA445A, 0px -2px 1px #74F0ED; }
 
-.section-2 {
-  color: #D8DEE9;
-  width: 600px;
-  height: 600px;
-  border: 2px solid rgba(0, 0, 0, 0.4);
-  border-radius: 10px;
-  backdrop-filter: blur(20px);
-  box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
-  display: flex;
-  overflow: hidden;
-  position: absolute;
-  margin: 0 auto;
-  top: 1500px;
-  left: 50%;
-  transform: translate(-50%, -50%); }
-
 #brandtext {
   color: #f5bf4a;
   text-align: center; }
 
-#navitems > a {
-  color: #9ae4f8; }
+.nav-link {
+  color: #D8DEE9; }
 
 .hidden {
   position: absolute;
   left: -9999px;
   top: -9999px;
   visibility: hidden; }
+
+.active {
+  color: red; }
 
 /*# sourceMappingURL=styles.css.map */

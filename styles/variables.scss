@@ -1,6 +1,8 @@
 $dark-nord: #2E3440;
 $cyan-nord: #9ae4f8;
 $gold-nord: #f5bf4a;
+$green-aurora: #A3BE8C;
+$red-aurora: #BF616A;
 $snowstorm1: #D8DEE9;
 $snowstorm2: #ECEFF4;
 $snowstorm2-darker: #eceff48a;
@@ -106,6 +108,10 @@ body {
     font-weight: 700;
 }
 
+.nav-link:hover {
+    color: $cyan-nord;
+}
+
 .content {
     width: 100%;
     position: absolute;
@@ -120,30 +126,13 @@ body {
     text-shadow: 3px 2px 1px $titletextred, 0px -2px 1px $titletextblue;
 }
 
-.section-2 {
-    color: $snowstorm1;
-    width: 600px;
-    height: 600px;
-    border: 2px solid rgba(0, 0, 0, 0.4);
-    border-radius: 10px;
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 30px rgba(255, 255, 255, .3);
-    display: flex;
-    overflow: hidden;
-    position: absolute;
-    margin: 0 auto;
-    top: 1500px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 #brandtext {
     color: $gold-nord;
     text-align: center;
 }
 
-#navitems > a {
-    color: $cyan-nord;
+.nav-link {
+    color: $snowstorm1;
 }
 
 .hidden {
@@ -151,4 +140,8 @@ body {
     left: -9999px;
     top: -9999px;
     visibility: hidden;
+}
+
+.active {
+    color: red;;
 }
