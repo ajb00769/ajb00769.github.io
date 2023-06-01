@@ -40,6 +40,7 @@ $titlefontsz: 16px;
 
 ::-webkit-scrollbar {
     width: 10px;
+    height: 10px;
 }
 
 ::-webkit-scrollbar-track {
@@ -47,12 +48,12 @@ $titlefontsz: 16px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: $snowstorm2;
+    background: $snowstorm2-darker;
     border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: $snowstorm2-darker;
+    background: $snowstorm2;
 }
 
 * {
@@ -102,6 +103,10 @@ body {
     padding-top: 5px;
 }
 
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
 .nav-link {
     font-family: "Montserrat", sans-serif;
     font-size: $textfontsz;
@@ -144,4 +149,20 @@ body {
 
 .active {
     color: red;;
+}
+
+.section-2 {
+    width: 900px;
+    height: 900px;
+    background: transparent;
+    border: 2px solid rgba(0, 0, 0, .2);
+    border-radius: 2px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(255, 255, 255, .3);
+    position: relative;
+    margin: 1000px auto;
+}
+
+.words {
+    color: $snowstorm1;
 }
