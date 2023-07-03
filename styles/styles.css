@@ -33,13 +33,14 @@
 
 * {
   margin: 0;
-  padding: 0; }
+  box-sizing: border-box; }
 
 nav {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
   background: transparent;
-  backdrop-filter: blur(20px);
-  border-radius: 2px; }
+  backdrop-filter: blur(200px);
+  border-radius: 2px;
+  z-index: 9999; }
 
 body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("/images/bldg.jpg");
@@ -48,6 +49,8 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   display: flex;
+  flex-direction: column;
+  text-align: center;
   min-width: 600px; }
 
 .text-logo-1 {
@@ -111,17 +114,28 @@ body {
   color: red; }
 
 .section-2 {
-  width: 900px;
-  height: 900px;
-  background: transparent;
-  border: 2px solid rgba(0, 0, 0, 0.2);
-  border-radius: 2px;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
-  position: relative;
-  margin: 1000px auto; }
+  position: absolute;
+  top: 50%; }
 
 .words {
   color: #D8DEE9; }
+
+.my-title {
+  color: white;
+  font-size: 40px;
+  font-family: "Roboto", sans-serif;
+  padding-top: 20%; }
+
+.qrcs {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 10%;
+  margin-bottom: 10%; }
+
+.words-about {
+  margin: 15% 10% 10% 10%;
+  color: #D8DEE9;
+  text-align: justify;
+  text-indent: 2em; }
 
 /*# sourceMappingURL=styles.css.map */

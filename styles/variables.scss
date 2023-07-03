@@ -58,14 +58,15 @@ $titlefontsz: 16px;
 
 * {
     margin: 0;
-    padding: 0;
+    box-sizing: border-box;
 }
 
 nav {
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
     background: transparent;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(200px);
     border-radius: 2px;
+    z-index: 9999;
 }
 
 body {
@@ -75,6 +76,8 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     display: flex;
+    flex-direction: column;
+    text-align: center;
     min-width: 600px;
 }
 
@@ -152,17 +155,31 @@ body {
 }
 
 .section-2 {
-    width: 900px;
-    height: 900px;
-    background: transparent;
-    border: 2px solid rgba(0, 0, 0, .2);
-    border-radius: 2px;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 0 30px rgba(255, 255, 255, .3);
-    position: relative;
-    margin: 1000px auto;
+    position: absolute;
+    top: 50%;
 }
 
 .words {
     color: $snowstorm1;
+}
+
+.my-title {
+    color: white;
+    font-size: 40px;
+    font-family: "Roboto", sans-serif;
+    padding-top: 20%;
+}
+
+.qrcs {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10%;
+    margin-bottom: 10%;
+}
+
+.words-about {
+    margin: 15% 10% 10% 10%;
+    color: $snowstorm1;
+    text-align: justify;
+    text-indent: 2em;
 }
