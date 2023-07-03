@@ -37,7 +37,7 @@
 
 nav {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
-  background: transparent;
+  background: #2E3440;
   backdrop-filter: blur(200px);
   border-radius: 2px;
   z-index: 9999; }
@@ -124,13 +124,17 @@ body {
   color: white;
   font-size: 40px;
   font-family: "Roboto", sans-serif;
-  padding-top: 20%; }
+  padding-top: 15%; }
 
 .qrcs {
   display: flex;
   justify-content: space-evenly;
   padding-top: 10%;
-  margin-bottom: 10%; }
+  margin-bottom: 10%;
+  align-items: center; }
+
+.qrcs-contain {
+  max-width: 100%; }
 
 .words-about {
   margin: 15% 10% 10% 10%;
