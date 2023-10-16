@@ -154,4 +154,7 @@ body {
   text-align: justify;
   text-indent: 2em; }
 
+.pointer {
+  cursor: pointer;
+}
 /*# sourceMappingURL=styles.css.map */
